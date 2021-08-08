@@ -16,7 +16,7 @@ if len(sys.argv) > 1:
 result = database.collection.get_rows()
 #reads through all rows and deletes selected or all if A is done
 for row in result:
-   if run_all == True or row.update == True:
+   if run_all == True or row.Status == 'Update':
       print(row)  # Just prints summary of row
       for child in row.children:
          child.remove(permanently=True)
