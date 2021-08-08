@@ -1,26 +1,21 @@
-**Table of Contents**
-
-[[_TOC_]]
-
 # DESN2000: Skeletal Dysplasia Knowledge Base (SDKB) Project
 
 The goal of this project is to create a knowledge base in Notion that collects key information on all known skeletal dysplasias. 
-Data from the SDKB will be shared with the G2P Project. 
+Data from the SDKB will be shared with the G2P Project, but includes a few additional fields.
 We will extract data relevant to skeletal dysplasias from the G2P Project's DDG2P data file and use this to initially populate the SDKB. 
 Data from the SKDB will also be exported as a 'Skeletal G2P data file' for use with the G2P Project. 
-We will use the recently released Notion API to facilitate the import and export of data. 
+We will use the recently released Notion API to facilitate the import and export of data.
+Some features (specifically: deleting an existing block in Notion) is not yet supported in the Notion API, we thus use the inofficial Notion API for this.
 
 
 View the Notion Database [here](https://www.notion.so/2360d5674740442d98435027aefe48d9?v=cec5e58748e2445581a56cc8b12fc5e5).
-
-<img src="/uploads/7a8f17a2e81d553e1737cf034781e77f/Screen_Shot_2021-08-01_at_6.10.20_pm.png" alt="Database header image"/>
 
 ## Setup
 
 ### System Requirements
 
-Python 3.5 or later - [Download here](https://www.python.org/downloads/)  
-Node 14.17.3 & npm 6.14.13 or later - [Download here](https://nodejs.org/en/download/)
+Python 3.5 or later (needed for the inofficial Notion API, which runs on Python) - [Download here](https://www.python.org/downloads/)  
+Node 14.17.3 & npm 6.14.13 or later (needed for the official Notion API, which runs on Javascript) - [Download here](https://nodejs.org/en/download/)
 
 ### Notion API Setup
 
